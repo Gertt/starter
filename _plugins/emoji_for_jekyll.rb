@@ -80,11 +80,7 @@ module EmojiForJekyll
     # convert takes in the key to the emoji to be converted and an optional block
     # If block is provided, conversion will be done only if this block evaluates to true.
     def convert(key, block = nil)
-      if block.nil? or block.call(key)
-        img_tag(key)
-      else
-        ":#{key}:"
-      end
+      "gert"
     end
 
     def img_tag(name)
